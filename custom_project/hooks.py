@@ -7,6 +7,11 @@ app_description = "Extend Project Function"
 app_email = "gaoxinxiang@immunocan.com"
 app_license = "MIT"
 
+doc_events = {
+    "Project": {
+        "before_insert": "custom_project.custom_project.CustomProject"
+    }
+}
 # Includes in <head>
 # ------------------
 
