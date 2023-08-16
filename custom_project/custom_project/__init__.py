@@ -1,5 +1,7 @@
+import frappe
+import erpnext
 from frappe import _
-
+from erpnext.projects.doctype.project.project import Project
 class CustomProject(Project):
 	def create_task_from_template(self, task_details):
 		return frappe.get_doc(
