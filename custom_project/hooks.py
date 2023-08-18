@@ -7,10 +7,8 @@ app_description = "Extend Project Function"
 app_email = "gaoxinxiang@immunocan.com"
 app_license = "MIT"
 
-doc_events = {
-    "Project": {
-        "before_insert": "custom_project.custom_project.CustomProject"
-    }
+override_doctype_class = {
+	"Projdect": "custom_project.overrides.CustomProject"
 }
 # Includes in <head>
 # ------------------
