@@ -18,5 +18,6 @@ class CustomProject(Project):
 				issue=task_details.issue,
 				is_group=task_details.is_group,
 				color=task_details.color,
+				task_user=task_details.task_user,
 			)
 		).insert()
